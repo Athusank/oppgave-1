@@ -7,8 +7,9 @@
 body{
     border: solid black 4px;
     margin: 0 auto;
-    width: 50vw;
+    width: 75vw;
     background-color: aliceblue;
+    display: grid;
 }
 h1{
 font-weight: bold;
@@ -21,8 +22,9 @@ border: solid black 4px;
 }
 table{
         border-collapse: collapse;
-        margin: 4px;
+        margin: 6px;
         padding: 2px;
+        margin-bottom: 6px;
     }
     td{
         border: 2px solid black;
@@ -30,15 +32,24 @@ table{
     }
     th{ border: 3px solid black ; 
        background-color: darkgray;
-    }
-section{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    border: black 2px;
-    width: 50vw;
-    object-fit: contain;
-}
- 
+    }  
+    section{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            width: 75vw;
+        }
+        article {
+        background-color: darkgrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        contain: content;
+        width: 25vw;
+        margin: 0;
+      
+       
+        }
+
 </style>
 </head>
 <body>
